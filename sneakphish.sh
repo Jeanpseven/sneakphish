@@ -52,7 +52,7 @@ case $option_num in
 }
 
 get_token() {
-    read -p "Enter your Ngrok or Localx token: " token
+    read -p "Enter your Ngrok token: " token
     ngrok config add-authtoken $token
     }
 
