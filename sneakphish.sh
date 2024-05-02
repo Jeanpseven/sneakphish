@@ -17,36 +17,36 @@ select_site() {
     read -p "Enter the option number: " option_num
 
 case $option_num in
-        1) site="instagram.com";;
-        2) site="facebook.com";;
-        3) site="socialclub.com";;
-        4) site="netflix.com";;
-        5) site="telegram.org";;
-        6) site="yahoo.com";;
-        7) site="youtube.com";;
-        8) site="xbox.com";;
-        9) site="wifi.com";;
-        10) site="twitter.com";;
-        11) site="airtelsim.com";;
-        12) site="amazon.com";;
-        13) site="apple.com";;
-        14) site="clasofclans.com";;
-        15) site="google.com";;
-        16) site="freefire.com";;
-        17) site="github.com";;
-        18) site="gmail.com";;
-        19) site="outlook.com";;
-        20) site="steam.com";;
-        21) site="wordpress.com";;
-        22) site="jiorouter.com";;
-        23) site="snapchat.com";;
-        24) site="ola.com";;
-        25) site="paypal.com";;
-        26) site="linkedin.com";;
-        27) site="playstation.com";;
-        28) site="pubg.com";;
-        29) site="shopify.com";;
-        30) site="socialclub.com";;
+        1) site="instagram";;
+        2) site="facebook";;
+        3) site="socialclub";;
+        4) site="netflix";;
+        5) site="telegram";;
+        6) site="yahoo";;
+        7) site="youtube";;
+        8) site="xbox";;
+        9) site="wifi";;
+        10) site="twitter";;
+        11) site="airtelsim";;
+        12) site="amazon";;
+        13) site="apple";;
+        14) site="clasofclans";;
+        15) site="google";;
+        16) site="freefire";;
+        17) site="github";;
+        18) site="gmail";;
+        19) site="outlook";;
+        20) site="steam";;
+        21) site="wordpress";;
+        22) site="jiorouter";;
+        23) site="snapchat";;
+        24) site="ola";;
+        25) site="paypal";;
+        26) site="linkedin";;
+        27) site="playstation";;
+        28) site="pubg";;
+        29) site="shopify";;
+        30) site="socialclub";;
         *) echo -e "Invalid option";;
     esac
 }
